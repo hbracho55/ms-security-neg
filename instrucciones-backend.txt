@@ -1,0 +1,20 @@
+
+1. Inicializar proyecto node
+> npm init -y
+
+2. Instalar nodemon para que se ejecute automaticamente el proyecto luego de cada cambio
+> npm i nodemon (se agrega -g si se quiere instalar de forma global, en wondows se debe ejecutar desde terminal como admin y en otros SO se ejecuta con sudo. 
+En el package.json se debe agregar lo sigueinte para que la ejecucion sea mas facil (para desarrollo se ejecuta: "npm run dev" y para prod: "npm start" ):
+"scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  }
+
+3. Instalar los paquetes para servidor
+> npm i express
+
+4. Instalar el paquete para acceder a variable de entorno
+> npm i dotenv
+
+5. Instalar paquete para validaciones de datos de body
+> npm i express-validator
